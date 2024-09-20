@@ -1,9 +1,8 @@
 function calcular(){
-    var val1 = parseFloat(document.getElementById('val1').value);
-    var val2 = parseFloat(document.getElementById('val2').value);
-    var val3 = parseFloat(document.getElementById('val3').value);
+    var Q1 = parseFloat(document.getElementById('Q1').value);
+    var Q2 = parseFloat(document.getElementById('Q2').value);
+    var D = parseFloat(document.getElementById('D').value);
 
-    var media = (val1 + val2 + val3) / 3;
-    document.getElementById('resultado').innerText = media;
-
+    var Força = (9000000 * Q1 * Q2 / (D * D));
+    document.getElementById('resultado').innerText = Força;
 }
